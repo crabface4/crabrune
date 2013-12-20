@@ -65,6 +65,23 @@ def fire2
 		end
 end
 
+def head
+	puts "The gun fires, and the metal man's head is spinning in circles. Fire and smoke emerge from it as it collapses. It is dead. You walk up to it and find out what it really is. A cyborg. You scavenge the cyborg and find a sharp stick of metal where part of its leg was. You try to remove it, but it is still attached. You here the clanking of more cyborgs on the way. Do you choose to keep trying to remove it, or do you decide to hide yourself and the dead cyborg? (Hide/Pull)"
+	 e = gets.chomp
+	 	if e == "Hide"
+	 		hide1
+	 	elsif e == "Pull"
+	 		stick1
+	 	elsif e == "Miracle"
+	 	    godpowers
+	 	else 
+	 		puts "You remain undecided as the 4 cyborgs come after you. You remain frozen, hoping they'd think you were a statue. One of the cyborgs reach for your neck. You hear a CRACK! Your neck has been broken. Game Over..."
+	 		e
+	 	end
+end
+
+
+
 def heart
         puts "You take your shot, and a bang crashes through the forest. You hit him directly in the heart. He falls to his knees in pain, and collapses. Do you want to inspect the body, or do you want to keep looking for supplies? (Inspect/Look2)"
         b = gets.chomp
@@ -208,19 +225,6 @@ def wake
                         puts "Either you seem confused, or you cannot read your map. Please answer North or South."
                         crash
                 end
-end
-
-def miss1
-	puts "You pull the trigger and a bang echos. You see would splinter, and the metal man is not hit. Its a miss!  Will you run and hide, or will you try to take it on with your fists? (Hide/Punch)"
-	f = gets.chomp
-		if f == Hide
-			hide
-		elsif f == Punch
-			punch
-		else
-			put "Your indecision has made you and easy target. The metal man reaches for his weapon and fires. The last thing you see is blood running down your face. You have died. Game Over..."
-			f
-	end
 end
 
 def forest

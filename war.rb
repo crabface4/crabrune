@@ -210,6 +210,19 @@ def wake
                 end
 end
 
+def miss1
+	puts "You pull the trigger and a bang echos. You see would splinter, and the metal man is not hit. Its a miss!  Will you run and hide, or will you try to take it on with your fists? (Hide/Punch)"
+	f = gets.chomp
+		if f == Hide
+			hide
+		elsif f == Punch
+			punch
+		else
+			put "Your indecision has made you and easy target. The metal man reaches for his weapon and fires. The last thing you see is blood running down your face. You have died. Game Over..."
+			f
+	end
+end
+
 def forest
         puts "You start to wander around the forest. You notice that most of the wildlife is withered out and dying. Food will be very hard to find. As you conitnue walking, it starts to rain. You quickly run to a tree with very big leaves, so that you don't become soaking wet. You sit there in the rain for thirty minutes. Do you want to continue exploring, or do you want to check out the plane wreckage? (Wreckage/Look)"
         woods = gets.chomp
